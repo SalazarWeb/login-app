@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .input-field {
+    @apply bg-gray-800 w-full pl-10 pr-3 py-2 border border-gray-700 rounded-md text-gray-200 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500;
+  }
+
+  .btn-primary {
+    @apply flex justify-center py-2 px-4 rounded-md text-sm font-medium text-white bg-purple-600 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 transition-colors;
+  }
+
+  .btn-danger {
+    @apply flex items-center px-4 py-2 text-sm font-medium text-white bg-red-600 hover:bg-red-700 rounded-md transition-colors;
+  }
+
+  .tab-button {
+    @apply flex items-center px-4 py-2 rounded-md transition-colors;
+  }
+
+  .tab-button-active {
+    @apply bg-purple-600 text-white;
+  }
+
+  .tab-button-inactive {
+    @apply bg-gray-800 text-gray-300 hover:bg-gray-700;
+  }
+
+  .card {
+    @apply bg-gray-800 rounded-lg shadow-xl;
+  }
+}
+
+body {
+  @apply bg-gray-900 text-gray-100;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-800;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-purple-600 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-purple-700;
+}
